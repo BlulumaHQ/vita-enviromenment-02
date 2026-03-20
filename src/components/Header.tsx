@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import vitaLogo from "@/assets/vita-logo.png";
 import { Menu, X, Phone } from "lucide-react";
 
 const navItems = [
