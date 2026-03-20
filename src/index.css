@@ -24,15 +24,15 @@
     --muted: 210 15% 95%;
     --muted-foreground: 215 10% 45%;
 
-    --accent: 40 95% 52%;
-    --accent-foreground: 215 35% 12%;
+    --accent: 199 76% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 210 15% 90%;
     --input: 210 15% 90%;
-    --ring: 40 95% 52%;
+    --ring: 199 76% 56%;
 
     --radius: 0.5rem;
 
@@ -41,8 +41,8 @@
     --section-dark: 215 35% 12%;
     --section-dark-foreground: 0 0% 100%;
     --section-alt: 210 20% 97%;
-    --cta-band: 40 95% 52%;
-    --cta-band-foreground: 215 35% 12%;
+    --cta-band: 205 80% 44%;
+    --cta-band-foreground: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

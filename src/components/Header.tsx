@@ -15,7 +15,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm shadow-sm">
       <div className="container-site flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -31,7 +31,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors hover:text-accent ${
                 location.pathname === item.path
                   ? "text-accent"
-                  : "text-primary-foreground/80"
+                  : "text-foreground/80"
               }`}
             >
               {item.label}
@@ -48,7 +48,7 @@ const Header = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-primary-foreground"
+          className="md:hidden text-foreground"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,7 +57,7 @@ const Header = () => {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <nav className="md:hidden bg-primary border-t border-primary-foreground/10 pb-4">
+        <nav className="md:hidden bg-background border-t border-border pb-4">
           {navItems.map((item) => (
             <Link
               key={item.path}
@@ -66,7 +66,7 @@ const Header = () => {
               className={`block px-6 py-3 text-sm font-medium transition-colors ${
                 location.pathname === item.path
                   ? "text-accent"
-                  : "text-primary-foreground/80 hover:text-accent"
+                  : "text-foreground/80 hover:text-accent"
               }`}
             >
               {item.label}
