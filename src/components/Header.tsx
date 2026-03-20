@@ -31,7 +31,7 @@ const Header = () => {
               className={`text-sm font-medium transition-colors hover:text-accent ${
                 location.pathname === item.path
                   ? "text-accent"
-                  : "text-primary-foreground/80"
+                  : "text-foreground/80"
               }`}
             >
               {item.label}
