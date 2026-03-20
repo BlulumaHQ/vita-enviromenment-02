@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import vitaLogo from "@/assets/vita-logo.png";
 import { Menu, X, Phone } from "lucide-react";
 
 const navItems = [
@@ -17,13 +18,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm">
       <div className="container-site flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center">
-            <span className="font-heading font-extrabold text-accent-foreground text-sm">V</span>
-          </div>
-          <span className="font-heading font-bold text-primary-foreground text-lg tracking-tight">
-            Vita Environmental
-          </span>
+        <Link to="/" className="flex items-center">
+          <img src={vitaLogo} alt="Vita Environmental" className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}
