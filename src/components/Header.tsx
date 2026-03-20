@@ -66,7 +66,7 @@ const Header = () => {
               className={`block px-6 py-3 text-sm font-medium transition-colors ${
                 location.pathname === item.path
                   ? "text-accent"
-                  : "text-primary-foreground/80 hover:text-accent"
+                  : "text-foreground/80 hover:text-accent"
               }`}
             >
               {item.label}
