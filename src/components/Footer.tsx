@@ -75,7 +75,7 @@ const Footer = () => {
           >
             Bluluma Design
           </a>
-        </div>
+        {" "}<span className="block mt-1 opacity-80" data-concept-note>Design concept for portfolio purposes only. Not the official website of Vita Environmental.</span></div>
       </div>
     </footer>
   );
